@@ -3,5 +3,4 @@
 [[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
 
 eval "$(starship init zsh)"
-
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
