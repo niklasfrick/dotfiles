@@ -15,7 +15,7 @@ alias code="open -a 'Visual Studio Code'"
 alias cls='clear'
 
 alias rm='rm -i'
-alias pcp="rsync -r --progress -h"
+alias pcp="rsync -rh --info=progress2 --stats"
 
 # Quick directory jumping
 alias ghl="cd $HOME/Coding/homelab"
