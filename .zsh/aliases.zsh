@@ -15,6 +15,7 @@ alias code="open -a 'Visual Studio Code'"
 alias cls='clear'
 
 alias rm='rm -i'
+alias pcp="rsync -r --progress -h"
 
 # Quick directory jumping
 alias ghl="cd $HOME/Coding/homelab"
@@ -32,5 +33,3 @@ alias ll="eza --icons --group-directories-first -l"
 alias la="eza --icons --group-directories-first -la"
 
 alias grep='grep --color=auto -i'
-
-alias prx="ssh root@pve.local.zazen.li"
