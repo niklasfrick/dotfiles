@@ -1,3 +1,5 @@
 [user]
 	email = hi@niklasfrick.com
 	name = niklasfrick
+[core]
+	excludesFile = ~/.gitignore_global

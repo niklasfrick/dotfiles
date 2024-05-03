@@ -14,6 +14,8 @@ alias code="open -a 'Visual Studio Code'"
 
 alias cls='clear'
 
+alias rm='rm -i'
+
 # Quick directory jumping
 alias ghl="cd $HOME/Coding/homelab"
 
