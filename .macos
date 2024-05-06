@@ -114,6 +114,9 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 defaults write com.apple.dock wvous-br-corner -int 12
 defaults write com.apple.dock wvous-br-modifier -int 0
 
+# Show location services in menu bar
+defaults write com.apple.locationmenu.plist ShowSystemServices -bool true
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
