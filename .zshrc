@@ -3,5 +3,9 @@
 [[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
 
 eval "$(starship init zsh)"
+
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 eval "$(direnv hook zsh)"
+
+export SOPS_AGE_KEY_FILE=$HOME/.sops/key.txt

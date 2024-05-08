@@ -12,10 +12,12 @@ alias ai="ansible-inventory -i inventory.yml --graph --vars"
 
 alias code="open -a 'Visual Studio Code'"
 
-alias cls='clear'
-
-alias rm='rm -i'
+alias cls="clear"
+alias grep="ggrep"
+alias rm="rm -i"
 alias pcp="rsync -rh --info=progress2 --stats"
+
+alias mkcd='function _mkcd(){ mkdir -p "$1" && cd "$1"; }; _mkcd'
 
 # Quick directory jumping
 alias ghl="cd $HOME/Coding/homelab"
@@ -32,4 +34,6 @@ alias ls="eza --icons --group-directories-first"
 alias ll="eza --icons --group-directories-first -l"
 alias la="eza --icons --group-directories-first -la"
 
-alias grep='grep --color=auto -i'
+# SOPS and AGE
+alias sae='encrypt_sops_age'
+alias sad='decrypt_sops_age'
