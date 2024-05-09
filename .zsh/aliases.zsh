@@ -35,5 +35,7 @@ alias ll="eza --icons --group-directories-first -l"
 alias la="eza --icons --group-directories-first -la"
 
 # SOPS and AGE
-alias sae='encrypt_sops_age'
-alias sad='decrypt_sops_age'
+alias saei='encrypt_sops_age_inplace'
+alias sadi='decrypt_sops_age_inplace'
+alias saef='encrypt_sops_age_filetype'
+alias sadf='decrypt_sops_age_filetype'
