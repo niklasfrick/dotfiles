@@ -9,6 +9,11 @@ encrypt_sops_age_inplace() {
         echo "Usage: encrypt_with_sops_age_inplace <file>"
         return 1
     fi
+
+    if grep -q "ENC\[" "$1"; then
+        echo "Error: The file is already encrypted."
+        return 1
+    fi
     
     local age_key
     age_key=$(cat "$SOPS_AGE_KEY_FILE" | grep -oP "public key: \K(.*)")
@@ -33,6 +38,11 @@ decrypt_sops_age_inplace() {
 encrypt_sops_age_filetype() {
     if [ -z "$1" ]; then
         echo "Usage: encrypt_with_sops_age_filetype <file>"
+        return 1
+    fi
+
+    if grep -q "ENC\[" "$1"; then
+        echo "Error: The file is already encrypted."
         return 1
     fi
 
