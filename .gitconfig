@@ -1,5 +1,8 @@
 [user]
-	email = hi@niklasfrick.com
-	name = niklasfrick
+  email = hi@niklasfrick.com
+  name = niklasfrick
 [core]
-	excludesFile = ~/.gitignore_global
+  excludesFile = ~/.gitignore_global
+
+[includeIf "gitdir:~/Coding/sparq/"]
+  path = .gitconfig_sparq
