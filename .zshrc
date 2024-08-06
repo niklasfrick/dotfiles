@@ -9,3 +9,7 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(direnv hook zsh)"
 
 export SOPS_AGE_KEY_FILE=$HOME/.sops/key.txt
+
+export KUBECONFIG=$HOME/.kube/config
+
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"

@@ -3,13 +3,24 @@
 #
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+# Kubernetes
 alias k="kubectl"
+alias kg="kubectl get"
+alias kga="kubectl get all"
+alias kgn="kubectl get nodes"
+alias kgp="kubectl get pods"
+alias kgd="kubectl get deployments"
+alias kgs="kubectl get svc"
+alias kaf="kubectl apply -f"
+alias kdf="kubectl delete -f"
+alias kd="kubectl describe"
 alias h="helm"
 alias tf="terraform"
 alias a="ansible"
 alias ap="ansible-playbook"
 alias ai="ansible-inventory -i inventory.yml --graph --vars"
 
+# VS Code
 alias code="open -a 'Visual Studio Code'"
 
 alias cls="clear"
@@ -39,3 +50,6 @@ alias saei='encrypt_sops_age_inplace'
 alias sadi='decrypt_sops_age_inplace'
 alias saef='encrypt_sops_age_filetype'
 alias sadf='decrypt_sops_age_filetype'
+
+# rsync Documents Backup to NAS
+alias docbackup='rsync -av "/Users/niklas/Documents" "/Volumes/niklas/Documents"'
