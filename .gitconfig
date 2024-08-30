@@ -6,3 +6,6 @@
 
 [includeIf "gitdir:~/Coding/sparq/"]
   path = .gitconfig_sparq
+
+[includeIf "gitdir:~/Coding/gitlab/"]
+  path = .gitconfig_gitlab

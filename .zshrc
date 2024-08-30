@@ -8,6 +8,8 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 eval "$(direnv hook zsh)"
 
+eval "$(op completion zsh)"; compdef _op op
+
 export SOPS_AGE_KEY_FILE=$HOME/.sops/key.txt
 
 export KUBECONFIG=$HOME/.kube/config
