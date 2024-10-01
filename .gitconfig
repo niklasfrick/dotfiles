@@ -9,3 +9,6 @@
 
 [includeIf "gitdir:~/Coding/gitlab/"]
   path = .gitconfig_gitlab
+
+[includeIf "gitdir:~/ONZACK"]
+  path = .gitconfig_onzack
