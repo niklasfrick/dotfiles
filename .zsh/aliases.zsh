@@ -31,7 +31,8 @@ alias pcp="rsync -rh --info=progress2 --stats"
 alias mkcd='function _mkcd(){ mkdir -p "$1" && cd "$1"; }; _mkcd'
 
 # Quick directory jumping
-alias ghl="cd $HOME/Coding/homelab"
+alias gohl="cd $HOME/Coding/homelab"
+alias gooz="cd $HOME/ONZACK"
 
 # a quick way to get out of current directory
 alias ..='cd ..'
