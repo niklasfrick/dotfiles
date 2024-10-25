@@ -64,3 +64,11 @@ decrypt_sops_age_filetype() {
 
     sops --decrypt --age "$age_key" -i "$1"
 }
+
+# Create a alpine test box on kubernetes in the corresponding namespace and open its shell; its being destroyed afterwards
+createkubernetesalpinetest() {
+  local ns="$1"
+  kubectl --namespace "$ns" run alpine-test \
+    --image alpine --restart Never --rm --stdin --tty \
+    -- sh
+}
