@@ -1,13 +1,33 @@
-# ~/.config/starship.toml
+#Location: ~/.config/starship.toml
+#What_is_starship: https://starship.rs/
 
 add_newline = true
-command_timeout = 1000
-format = """$os$username$hostname$kubernetes$directory$git_branch$git_status"""
+command_timeout = 2000
+
+format = """$env_var$os$username$hostname$kubernetes$directory$git_branch$git_status$python
+$character
+"""
+
+[character]
+success_symbol = "╰⎯"
+error_symbol = "╰⎯"
+# ╭╴ ╰─
+
+[env_var]
+symbol = "╭╴"
+variable = 'SHELL'
+format = "$symbol"
+disabled = false
+
+
+#warp-Drop ugly default prompt characters
+#success_symbol = ""
+#error_symbol = ""
 
 # ---
 
 [os]
-format = '[$symbol](bold white) '   
+format = '[$symbol](bold white) '
 disabled = false
 
 [os.symbols]
@@ -15,36 +35,41 @@ Windows = ' '
 Arch = '󰣇'
 Ubuntu = ''
 Macos = '󰀵'
+Unknown = '󰠥'
 
 # ---y
 
 # Shows the username
 [username]
-style_user = 'white bold'
+style_user = 'yellow bold'
 style_root = 'black bold'
-format = '[$user]($style) '
+format = '[//](black bold) [$user](#2883ff) ' # 2883ff
 disabled = false
 show_always = true
 
 # Shows the hostname
 [hostname]
 ssh_only = false
-format = 'on [$hostname](bold yellow) '
+format = '[//](black bold) [$hostname](bold blue) '
 disabled = false
 
 # Shows current directory
 [directory]
-truncation_length = 1
+truncation_length = 0
 truncation_symbol = '…/'
-home_symbol = '󰋜 ~'
-read_only_style = '197'
+home_symbol = '~'
+# read_only_style = '197'
 read_only = '  '
-format = 'at [$path]($style)[$read_only]($read_only_style) '
+format = '[//](black bold) [$path]($style)[$read_only]($read_only_style) '
+style = '#7ed1fb' # yellow bold
 
+################################################################################
+## GIT
+################################################################################
 # Shows current git branch
 [git_branch]
-symbol = ' '
-format = 'via [$symbol$branch]($style) '
+symbol = ' '
+format = '[via](black bold) [$symbol$branch]($style) '
 # truncation_length = 4
 truncation_symbol = '…/'
 style = 'bold green'
@@ -67,7 +92,7 @@ deleted = '[󰍶 deleted=${count}](red) '
 
 # Shows kubernetes context and namespace
 [kubernetes]
-format = 'via [󱃾 $context\($namespace\)](bold purple) '
+format = '[via](black bold) [󱃾 $context\($namespace\)](bold purple) '
 disabled = false
 
 # ---
@@ -82,7 +107,9 @@ disabled = true
 disabled = true
 
 [python]
-disabled = true
+symbol = '󰌠'
+python_binary = ['./venv/bin/python', 'python', 'python3', 'python2']
+format = '[//](black bold) [${symbol} ${pyenv_prefix}(${version} )(\($virtualenv\) )]($style) '
 
 [nodejs]
 disabled = true
