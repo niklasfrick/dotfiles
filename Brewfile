@@ -64,7 +64,9 @@ tap "homebrew/services"
 # Third-party Homebrew Taps
 tap "hashicorp/tap"
 tap "buo/cask-upgrade"
-brew tap zackelia/formulae
+tap "hcavarsan/kftray"
+tap "fairwindsops/tap"
+tap "robusta-dev/homebrew-krr"
 
 ### AppStore & Docker deps
 brew "mas" # mac app store cli [https://github.com/mas-cli/mas]
@@ -72,7 +74,10 @@ brew "mas" # mac app store cli [https://github.com/mas-cli/mas]
 ### zsh & Terminal
 brew "zsh"
 brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+brew "zsh-autocomplete"
 brew "starship"
+brew "pam-reattach"
 
 ### ansible
 brew "ansible", link: :overwrite # config mgmt [https://www.ansible.com]
@@ -81,17 +86,28 @@ brew "ansible-lint", link: :overwrite # check best practices/behavior [https://a
 # filter tools (json/yaml/sql/binary)
 brew "fx"
 brew "jq"
+brew "yq"
 
 # git
 brew "gitleaks"
 brew "pre-commit"
+brew "gitmoji"
 
 # Kubernetes
 brew "kubectl"
 brew "kompose"
 brew "helm"
-brew "derailed/k9s/k9s"
+brew "k9s"
 brew "stern"
+brew "minikube"
+brew "cilium"
+brew "popeye"
+brew "velero"
+brew "chart-testing"
+brew "argocd"
+brew "fairwindsops/tap/pluto"
+brew "fairwindsops/tap/nova"
+brew "krr"
 
 # file/filesystem
 brew "eza"
@@ -107,35 +123,48 @@ brew "sops"
 brew "age"
 brew "hashicorp/tap/packer"
 brew "hashicorp/tap/terraform"
-brew "bclm"
-brew "httpd"
 brew "1password-cli"
 brew "tmux"
+brew "htop"
+brew "wget"
+brew "fastfetch"
 
 # Programming Languages
 brew "node"
-
+brew "pyenv"
+brew "go"
 
 # Casks
 cask "font-monaspace"
-cask "font-fira-code-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
 cask "alfred"
-cask "tunnelblick"
+cask "viscosity"
 cask "kubecontext"
 cask "docker"
 cask "spotify"
 cask "iterm2"
 cask "obsidian"
-cask "macdown"
-cask "rectangle"
 cask "brave-browser"
 cask "zed"
 cask "visual-studio-code"
 cask "protonvpn"
 cask "alt-tab"
+cask "twingate"
+cask "1password"
+cask "keepassxc"
+cask "microsoft-teams"
+cask "fliqlo"
+cask "nextcloud"
+cask "deeper"
+cask "aldente"
+cask "libreoffice"
+cask "parallels"
+cask "bitwarden"
+cask "kftray"
+cask "devtoys"
+cask "logi-options+"
 
 # Mac App Store
-mas "Twingate", id: 1501592214
 mas "WhatsApp", id: 310633997
 mas "Infuse", id: 1136220934
 
@@ -154,3 +183,6 @@ vscode "pkief.material-icon-theme"
 vscode "redhat.vscode-yaml"
 vscode "teabyii.ayu"
 vscode "vue.volar"
+vscode "shd101wyy.markdown-preview-enhanced"
+vscode "yzhang.markdown-all-in-one"
+vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
