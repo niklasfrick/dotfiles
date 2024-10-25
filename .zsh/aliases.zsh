@@ -8,6 +8,7 @@ alias k="kubectl"
 alias kg="kubectl get"
 alias kga="kubectl get all"
 alias kgn="kubectl get nodes"
+alias kgns="kubectl get namespaces"
 alias kgp="kubectl get pods"
 alias kgd="kubectl get deployments"
 alias kgs="kubectl get svc"
@@ -16,35 +17,36 @@ alias kdf="kubectl delete -f"
 alias kd="kubectl describe"
 alias h="helm"
 alias tf="terraform"
+alias kalpine="createkubernetesalpinetest"
+
+# Ansible
 alias a="ansible"
 alias ap="ansible-playbook"
 alias ai="ansible-inventory -i inventory.yml --graph --vars"
-
-# VS Code
-alias code="open -a 'Visual Studio Code'"
 
 alias cls="clear"
 alias grep="ggrep"
 alias rm="rm -i"
 alias pcp="rsync -rh --info=progress2 --stats"
+alias top="htop"
 
 alias mkcd='function _mkcd(){ mkdir -p "$1" && cd "$1"; }; _mkcd'
 
 # Quick directory jumping
-alias gohl="cd $HOME/Coding/homelab"
-alias gooz="cd $HOME/ONZACK"
+alias ghl="cd $HOME/Coding/homelab"
+alias gozk="cd $HOME/ONZACK"
+alias gic='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 
 # a quick way to get out of current directory
 alias ..='cd ..'
-alias ...='cd ../../../'
-alias ....='cd ../../../../'
-alias .....='cd ../../../../'
-alias .4='cd ../../../../'
-alias .5='cd ../../../../..'
+alias ...='cd ../../..'
+alias ....='cd ../../../..'
+alias .....='cd ../../../../..'
+alias .6='cd ../../../../../..'
 
-alias ls="eza --icons --group-directories-first"
-alias ll="eza --icons --group-directories-first -l"
-alias la="eza --icons --group-directories-first -la"
+alias ls="eza --icons --git --header --hyperlink --group-directories-first"
+alias ll="ls -l"
+alias la="ls -la"
 
 # SOPS and AGE
 alias saei='encrypt_sops_age_inplace'
