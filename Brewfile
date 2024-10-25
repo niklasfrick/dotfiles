@@ -128,6 +128,8 @@ brew "tmux"
 brew "htop"
 brew "wget"
 brew "fastfetch"
+brew "nano"
+brew "nanorc"
 
 # Programming Languages
 brew "node"
