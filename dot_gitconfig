@@ -1,0 +1,11 @@
+[user]
+  email = hi@niklasfrick.com
+  name = niklasfrick
+[core]
+  excludesFile = ~/.config/git/gitignore_global
+
+[includeIf "gitdir:~/Coding/gitlab/"]
+  path = ~/.config/git/gitconfig_gitlab
+
+[includeIf "gitdir:~/ONZACK"]
+  path = ~/.config/git/gitconfig_onzack
