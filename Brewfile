@@ -155,6 +155,7 @@ cask "brave-browser"
 cask "zed"
 cask "visual-studio-code"
 cask "protonvpn"
+cask "proton-drive"
 cask "twingate"
 cask "1password"
 cask "keepassxc"
@@ -170,6 +171,8 @@ cask "devtoys"
 cask "logi-options+"
 cask "appcleaner"
 cask "zwift"
+cask "postman"
+cask "cyberduck"
 
 # Mac App Store
 mas "WhatsApp", id: 310633997
