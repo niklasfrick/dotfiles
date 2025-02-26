@@ -1,7 +1,5 @@
 # Aliases
 # ---
-#
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Kubernetes
 alias kubectl="kubecolor"
