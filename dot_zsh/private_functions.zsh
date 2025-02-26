@@ -3,6 +3,13 @@ function colormap() {
   for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
 }
 
+# Export AGE Key
+export_age_key() {
+    if [ -z "$SOPS_AGE_KEY" ]; then
+        export SOPS_AGE_KEY=$(op read op://Personal/sops_age_key/key.txt)
+    fi
+}
+
 # SOPS encrypt with AGE in place
 encrypt_sops_age_inplace() {
     if [ -z "$1" ]; then
