@@ -50,6 +50,7 @@ alias ll="ls -l"
 alias la="ls -la"
 
 # SOPS and AGE
+alias eak='export_age_key'
 alias saei='encrypt_sops_age_inplace'
 alias sadi='decrypt_sops_age_inplace'
 alias saef='encrypt_sops_age_filetype'
