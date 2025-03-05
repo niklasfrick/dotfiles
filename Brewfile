@@ -135,6 +135,7 @@ brew "mkcert"
 brew "dnsmasq"
 brew "openssh"
 brew "chezmoi"
+brew "mc"
 
 # Programming Languages
 brew "node"
