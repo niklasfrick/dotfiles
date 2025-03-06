@@ -136,6 +136,7 @@ brew "dnsmasq"
 brew "openssh"
 brew "chezmoi"
 brew "mc"
+brew "jordanbaird-ice"
 
 # Programming Languages
 brew "node"
