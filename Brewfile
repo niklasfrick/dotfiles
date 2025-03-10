@@ -109,6 +109,8 @@ brew "fairwindsops/tap/pluto"
 brew "fairwindsops/tap/nova"
 brew "kubecolor"
 brew "kube-linter"
+brew "talosctl"
+brew "talhelper"
 
 # file/filesystem
 brew "eza"
