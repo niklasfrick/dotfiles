@@ -33,5 +33,11 @@ Host ubuntu-test
 	User ubuntu
 	IdentitiesOnly yes
 
+Host 185.79.233.*
+    PubkeyAuthentication no
+
 Host 185.79.234.*
+    PubkeyAuthentication no
+
+Host 185.79.235.*
     PubkeyAuthentication no
