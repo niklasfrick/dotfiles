@@ -21,7 +21,10 @@ alias kalpine="createkubernetesalpinetest"
 # Velero
 alias vbg="velero backup get"
 alias vbc="velero backup create"
-alias vbd="velero backup delete"
+alias vbd="velero backup describe"
+alias vbdel="velero backup delete"
+alias vbl="velero backup logs"
+alias vsg="velero schedule get"
 
 # Ansible
 alias a="ansible"
