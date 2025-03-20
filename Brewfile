@@ -177,6 +177,7 @@ cask "appcleaner"
 cask "zwift"
 cask "postman"
 cask "cyberduck"
+cask "betterdisplay"
 
 # Mac App Store
 mas "WhatsApp", id: 310633997
