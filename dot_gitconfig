@@ -2,10 +2,10 @@
   email = hi@niklasfrick.com
   name = niklasfrick
 [core]
-  excludesFile = ~/.config/git/gitignore_global
+  excludesFile = ~/.config/git/.gitignore_global
 
 [includeIf "gitdir:~/Coding/gitlab/"]
-  path = ~/.config/git/gitconfig_gitlab
+  path = ~/.config/git/.gitconfig_gitlab
 
 [includeIf "gitdir:~/ONZACK"]
-  path = ~/.config/git/gitconfig_onzack
+  path = ~/.config/git/.gitconfig_onzack
