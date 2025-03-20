@@ -1,0 +1,37 @@
+Host *
+	IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
+Host pve-01.home.balzers.xyz
+        User root
+
+Host *.home.balzers.xyz
+	User niklas
+
+Host personalgit
+	HostName github.com
+	User git
+	IdentitiesOnly yes
+
+Host gitlab
+	HostName gitlab.com
+	User git
+	IdentitiesOnly yes	
+
+Host gitlab.onzack.io
+	HostName gitlab.onzack.io
+	User git
+	Port 2022
+
+Host k8s-gr-gitlab.swisslex.ch
+	Port 2022
+
+Host *.onzack.io
+	User nfrick
+
+Host ubuntu-test
+	HostName 10.211.55.4
+	User ubuntu
+	IdentitiesOnly yes
+
+Host 185.79.234.*
+    PubkeyAuthentication no
