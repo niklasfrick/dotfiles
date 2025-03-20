@@ -18,6 +18,11 @@ alias h="helm"
 alias tf="terraform"
 alias kalpine="createkubernetesalpinetest"
 
+# Velero
+alias vbg="velero backup get"
+alias vbc="velero backup create"
+alias vbd="velero backup delete"
+
 # Ansible
 alias a="ansible"
 alias ap="ansible-playbook"
