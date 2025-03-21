@@ -120,6 +120,7 @@ brew "tree"
 brew "grep"
 brew "rsync"
 brew "glow"
+brew "fzf"
 
 # misc
 brew "sops"
@@ -139,6 +140,7 @@ brew "openssh"
 brew "chezmoi"
 brew "mc"
 brew "jordanbaird-ice"
+brew "just"
 
 # Programming Languages
 brew "node"
