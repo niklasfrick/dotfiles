@@ -112,6 +112,7 @@ brew "kube-linter"
 brew "talosctl"
 brew "talhelper"
 brew "azure-cli"
+brew "Azure/kubelogin/kubelogin"
 
 # file/filesystem
 brew "eza"
