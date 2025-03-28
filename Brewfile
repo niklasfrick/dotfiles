@@ -111,6 +111,7 @@ brew "kubecolor"
 brew "kube-linter"
 brew "talosctl"
 brew "talhelper"
+brew "azure-cli"
 
 # file/filesystem
 brew "eza"
