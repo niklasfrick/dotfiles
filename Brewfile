@@ -113,6 +113,7 @@ brew "talosctl"
 brew "talhelper"
 brew "azure-cli"
 brew "Azure/kubelogin/kubelogin"
+brew "kyverno"
 
 # file/filesystem
 brew "eza"
