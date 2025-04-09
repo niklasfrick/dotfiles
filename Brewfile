@@ -114,6 +114,7 @@ brew "talhelper"
 brew "azure-cli"
 brew "Azure/kubelogin/kubelogin"
 brew "kyverno"
+brew "trivy"
 
 # file/filesystem
 brew "eza"
