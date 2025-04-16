@@ -67,6 +67,7 @@ tap "buo/cask-upgrade"
 tap "hcavarsan/kftray"
 tap "fairwindsops/tap"
 tap "robusta-dev/homebrew-krr"
+tap "kyverno/chainsaw"
 
 ### AppStore & Docker deps
 brew "mas" # mac app store cli [https://github.com/mas-cli/mas]
@@ -116,6 +117,7 @@ brew "Azure/kubelogin/kubelogin"
 brew "kyverno"
 brew "trivy"
 brew "kubelogin"
+brew "kyverno/chainsaw/chainsaw"
 
 # file/filesystem
 brew "eza"
