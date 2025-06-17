@@ -119,6 +119,7 @@ brew "trivy"
 brew "kubelogin"
 brew "kyverno/chainsaw/chainsaw"
 brew "clusterctl"
+brew "kubeseal"
 
 # file/filesystem
 brew "eza"
