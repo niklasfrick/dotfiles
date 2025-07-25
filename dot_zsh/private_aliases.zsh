@@ -17,6 +17,7 @@ alias kd="kubectl describe"
 alias h="helm"
 alias tf="terraform"
 alias kalpine="createkubernetesalpinetest"
+alias t="talosctl"
 
 # Velero
 alias vbg="velero backup get"
