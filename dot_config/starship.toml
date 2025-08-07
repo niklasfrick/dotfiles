@@ -41,7 +41,7 @@ Unknown = '󰠥'
 
 # Show command duration
 [cmd_duration]
-min_time = 1
+min_time = 0
 
 # Shows the username
 [username]
