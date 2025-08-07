@@ -4,7 +4,7 @@
 add_newline = true
 command_timeout = 2000
 
-format = """$env_var$os$username$hostname$kubernetes$directory$git_branch$git_status$python
+format = """$env_var$os$username@$hostname$kubernetes$directory$git_branch$git_status$python
 $character
 """
 
@@ -20,11 +20,20 @@ format = "$symbol"
 disabled = false
 
 
-#warp-Drop ugly default prompt characters
-#success_symbol = ""
-#error_symbol = ""
-
 # ---
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "🔌"
+discharging_symbol = "⚡"
+
+[cmd_duration]
+min_time = 1_000  # Show command duration over 1000 milliseconds (=1 sec)
+format = " took [$duration]($style)"
+
+[directory]
+truncation_length = 5
+format = "[$path]($style)[$lock_symbol]($lock_style)"
 
 [os]
 format = '[$symbol](bold white) '
@@ -38,10 +47,6 @@ Macos = '󰀵'
 Unknown = '󰠥'
 
 # ---y
-
-# Show command duration
-[cmd_duration]
-min_time = 0
 
 # Shows the username
 [username]
