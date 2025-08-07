@@ -39,6 +39,10 @@ Unknown = '󰠥'
 
 # ---y
 
+# Show command duration
+[cmd_duration]
+min_time = 1
+
 # Shows the username
 [username]
 style_user = 'yellow bold'
