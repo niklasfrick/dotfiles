@@ -9,8 +9,8 @@ $character
 """
 
 [character]
-success_symbol = "[╰─](bold green)"
-error_symbol = "[╰─](bold red)"
+success_symbol = "╰─"
+error_symbol = "╰─"
 # ╭╴ ╰─
 
 [env_var]
@@ -21,15 +21,6 @@ disabled = false
 
 
 # ---
-
-[battery]
-full_symbol = "🔋"
-charging_symbol = "🔌"
-discharging_symbol = "⚡"
-
-[cmd_duration]
-min_time = 1_000  # Show command duration over 1000 milliseconds (=1 sec)
-format = " took [$duration]($style)"
 
 [os]
 format = '[$symbol](bold white) '
@@ -60,7 +51,7 @@ disabled = false
 
 # Shows current directory
 [directory]
-truncation_length = 5
+truncation_length = 6
 truncation_symbol = '…/'
 home_symbol = '~'
 # read_only_style = '197'
