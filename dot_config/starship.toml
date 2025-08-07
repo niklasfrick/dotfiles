@@ -31,10 +31,6 @@ discharging_symbol = "⚡"
 min_time = 1_000  # Show command duration over 1000 milliseconds (=1 sec)
 format = " took [$duration]($style)"
 
-[directory]
-truncation_length = 5
-format = "[$path]($style)[$lock_symbol]($lock_style)"
-
 [os]
 format = '[$symbol](bold white) '
 disabled = false
@@ -64,7 +60,7 @@ disabled = false
 
 # Shows current directory
 [directory]
-truncation_length = 0
+truncation_length = 5
 truncation_symbol = '…/'
 home_symbol = '~'
 # read_only_style = '197'
