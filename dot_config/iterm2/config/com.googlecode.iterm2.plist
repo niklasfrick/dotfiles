@@ -3339,7 +3339,7 @@
 			<key>Non-ASCII Ligatures</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>JetBrainsMonoNFM-Regular 14</string>
+			<string>JetBrainsMonoNFM-Regular 15</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -6360,6 +6360,8 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>SeparateStatusBarsPerPane</key>
 	<false/>
 	<key>ShowPaneTitles</key>
