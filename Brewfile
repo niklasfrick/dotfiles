@@ -94,6 +94,10 @@ brew "gitleaks"
 brew "pre-commit"
 brew "gitmoji"
 
+# Container
+brew "colima"
+brew "nerdctl"
+
 # Kubernetes
 brew "kubectl"
 brew "kompose"
