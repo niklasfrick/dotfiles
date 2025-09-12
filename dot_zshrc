@@ -44,3 +44,4 @@ complete -o nospace -C /opt/homebrew/bin/mc mc
 export PATH="$PATH:/Users/niklas/.lmstudio/bin"
 # End of LM Studio CLI section
 
+eval $(thefuck --alias)
