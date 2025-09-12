@@ -79,6 +79,9 @@ brew "zsh-syntax-highlighting"
 brew "zsh-autocomplete"
 brew "starship"
 brew "pam-reattach"
+brew "tmux"
+brew "iterm2"
+brew "thefuck"
 
 ### ansible
 brew "ansible", link: :overwrite # config mgmt [https://www.ansible.com]
@@ -140,7 +143,6 @@ brew "age"
 brew "hashicorp/tap/packer"
 brew "hashicorp/tap/terraform"
 brew "1password-cli"
-brew "tmux"
 brew "htop"
 brew "wget"
 brew "fastfetch"
