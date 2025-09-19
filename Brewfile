@@ -153,8 +153,8 @@ brew "dnsmasq"
 brew "openssh"
 brew "chezmoi"
 brew "mc"
-brew "jordanbaird-ice"
 brew "just"
+brew "gonzo"
 
 # Programming Languages
 brew "node"
