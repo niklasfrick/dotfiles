@@ -83,9 +83,14 @@ brew "tmux"
 brew "iterm2"
 brew "thefuck"
 
-### ansible
+### DevOps
 brew "ansible", link: :overwrite # config mgmt [https://www.ansible.com]
 brew "ansible-lint", link: :overwrite # check best practices/behavior [https://ansible-lint.readthedocs.io/]
+brew "sops"
+brew "age"
+brew "hashicorp/tap/packer"
+brew "hashicorp/tap/terraform"
+brew "opentofu"
 
 # filter tools (json/yaml/sql/binary)
 brew "fx"
@@ -115,7 +120,7 @@ brew "chart-testing"
 brew "argocd"
 brew "kubecolor"
 brew "kube-linter"
-brew "talosctl"
+brew "siderolabs/tap/sidero-tools"
 brew "talhelper"
 brew "azure-cli"
 brew "Azure/kubelogin/kubelogin"
@@ -138,10 +143,6 @@ brew "glow"
 brew "fzf"
 
 # misc
-brew "sops"
-brew "age"
-brew "hashicorp/tap/packer"
-brew "hashicorp/tap/terraform"
 brew "1password-cli"
 brew "htop"
 brew "wget"
