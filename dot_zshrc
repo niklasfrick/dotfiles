@@ -45,3 +45,4 @@ export PATH="$PATH:/Users/niklas/.lmstudio/bin"
 # End of LM Studio CLI section
 
 eval $(thefuck --alias)
+eval "$(mise activate zsh)"
