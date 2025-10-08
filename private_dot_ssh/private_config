@@ -9,11 +9,6 @@ Host pve-01.home.balzers.xyz
 Host *.home.balzers.xyz
 	User niklas
 
-Host gitlab
-	HostName gitlab.com
-	User git
-	IdentitiesOnly yes	
-
 Host gitlab.onzack.io
 	HostName gitlab.onzack.io
 	User git
