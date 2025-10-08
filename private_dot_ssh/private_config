@@ -9,7 +9,7 @@ Host pve-01.home.balzers.xyz
 Host *.home.balzers.xyz
 	User niklas
 
-Host personalgit
+Host github.com
 	HostName github.com
 	User git
 	IdentitiesOnly yes
@@ -29,8 +29,3 @@ Host gitlab.swisslex.ch
 
 Host *.onzack.io
 	User nfrick
-
-Host ubuntu-test
-	HostName 10.211.55.4
-	User ubuntu
-	IdentitiesOnly yes
