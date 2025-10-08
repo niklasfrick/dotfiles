@@ -30,6 +30,7 @@ eval "$(op completion zsh)"; compdef _op op
 compdef kubecolor=kubectl
 
 export KUBECONFIG=$HOME/.kube/config
+export PATH="$HOME/.rd/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
