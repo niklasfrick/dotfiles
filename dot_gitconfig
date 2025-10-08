@@ -1,8 +1,18 @@
 [user]
   email = niklas.frick@pm.me
   name = niklasfrick
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIveS+0VyQkUC+y/FECgIGPxphMoO+2/Khoy7vR4LzDn
 [core]
   excludesFile = ~/.config/git/.gitignore_global
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
 
 [includeIf "gitdir:~/Coding/gitlab/"]
   path = ~/.config/git/.gitconfig_gitlab
