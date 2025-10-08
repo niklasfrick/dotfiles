@@ -1,5 +1,5 @@
 [user]
-  email = hi@niklasfrick.com
+  email = niklas.frick@pm.me
   name = niklasfrick
 [core]
   excludesFile = ~/.config/git/.gitignore_global
