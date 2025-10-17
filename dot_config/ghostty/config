@@ -27,4 +27,3 @@ copy-on-select = clipboard
 window-height = 30
 window-width = 110
 shell-integration-features = ssh-terminfo,ssh-env
-xterm-256color
