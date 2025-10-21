@@ -68,6 +68,7 @@ tap "hcavarsan/kftray"
 tap "fairwindsops/tap"
 tap "robusta-dev/homebrew-krr"
 tap "kyverno/chainsaw"
+tap "mirceanton/taps"
 
 ### AppStore & Docker deps
 brew "mas" # mac app store cli [https://github.com/mas-cli/mas]
@@ -122,6 +123,7 @@ brew "kubecolor"
 brew "kube-linter"
 brew "siderolabs/tap/sidero-tools"
 brew "talhelper"
+brew "talswitcher"
 brew "azure-cli"
 brew "Azure/kubelogin/kubelogin"
 brew "kyverno"
