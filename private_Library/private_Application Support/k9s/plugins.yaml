@@ -10,7 +10,7 @@ plugins:
       - -c
       - "kubectl logs -f $NAME -n $NAMESPACE --context $CONTEXT | gonzo"
   krr:
-    shortCut: Shift-K
+    shortCut: Shift-k
     description: Get krr
     scopes:
       - deployments
@@ -33,7 +33,7 @@ plugins:
         fi
         done
   krr-ns:
-    shortCut: Shift-K
+    shortCut: Shift-k
     description: Get krr
     scopes:
       - namespaces
