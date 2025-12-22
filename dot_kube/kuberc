@@ -1,0 +1,378 @@
+apiVersion: kubectl.config.k8s.io/v1beta1
+kind: Preference
+
+# Default output and behavior
+defaults:
+  - command: get
+    options:
+      - name: output
+        default: wide
+  - command: delete
+    options:
+      - name: interactive
+        default: "true"
+
+aliases:
+  # === NAMESPACE OPERATIONS ===
+  - name: gns
+    command: get
+    prependArgs:
+      - namespaces
+  - name: cns
+    command: config
+    prependArgs:
+      - set-context
+      - --current
+      - --namespace
+
+  # === POD OPERATIONS ===
+  - name: gp
+    command: get
+    prependArgs:
+      - pods
+  - name: gpa
+    command: get
+    prependArgs:
+      - pods
+      - --all-namespaces
+  - name: gpr
+    command: get
+    prependArgs:
+      - pods
+      - --field-selector=status.phase=Running
+  - name: gpw
+    command: get
+    prependArgs:
+      - pods
+      - -w
+  - name: dp
+    command: describe
+    prependArgs:
+      - pod
+  - name: delp
+    command: delete
+    prependArgs:
+      - pod
+
+  # === DEPLOYMENT OPERATIONS ===
+  - name: gd
+    command: get
+    prependArgs:
+      - deployments
+  - name: gda
+    command: get
+    prependArgs:
+      - deployments
+      - --all-namespaces
+  - name: dd
+    command: describe
+    prependArgs:
+      - deployment
+  - name: sd
+    command: scale
+    prependArgs:
+      - deployment
+  - name: rd
+    command: rollout
+    prependArgs:
+      - restart
+      - deployment
+  - name: rsd
+    command: rollout
+    prependArgs:
+      - status
+      - deployment
+  - name: rhd
+    command: rollout
+    prependArgs:
+      - history
+      - deployment
+
+  # === SERVICE OPERATIONS ===
+  - name: gs
+    command: get
+    prependArgs:
+      - services
+  - name: gsa
+    command: get
+    prependArgs:
+      - services
+      - --all-namespaces
+  - name: ds
+    command: describe
+    prependArgs:
+      - service
+  - name: geps
+    command: get
+    prependArgs:
+      - endpointslices
+
+  # === CONFIGMAP & SECRET OPERATIONS ===
+  - name: gcm
+    command: get
+    prependArgs:
+      - configmaps
+  - name: dcm
+    command: describe
+    prependArgs:
+      - configmap
+  - name: gsec
+    command: get
+    prependArgs:
+      - secrets
+  - name: dsec
+    command: describe
+    prependArgs:
+      - secret
+
+  # === INGRESS & NETWORKING ===
+  - name: gi
+    command: get
+    prependArgs:
+      - ingress
+  - name: gia
+    command: get
+    prependArgs:
+      - ingress
+      - --all-namespaces
+  - name: di
+    command: describe
+    prependArgs:
+      - ingress
+  - name: gnp
+    command: get
+    prependArgs:
+      - networkpolicies
+
+  # === NODE OPERATIONS ===
+  - name: gno
+    command: get
+    options:
+      - name: output
+        default: wide
+    prependArgs:
+      - nodes
+  - name: dno
+    command: describe
+    prependArgs:
+      - node
+  - name: tno
+    command: top
+    prependArgs:
+      - nodes
+
+  # === LOGS ===
+  - name: logsf
+    command: logs
+    prependArgs:
+      - --follow
+      - --tail=100
+  - name: logsp
+    command: logs
+    prependArgs:
+      - --previous
+      - --tail=100
+
+  # === EXEC ===
+  - name: ex
+    command: exec
+    prependArgs:
+      - -it
+  - name: bash
+    command: exec
+    prependArgs:
+      - -it
+    appendArgs:
+      - --
+      - /bin/bash
+  - name: sh
+    command: exec
+    prependArgs:
+      - -it
+    appendArgs:
+      - --
+      - /bin/sh
+
+  # === EVENTS ===
+  - name: gev
+    command: get
+    prependArgs:
+      - events
+      - --sort-by=.lastTimestamp
+  - name: geva
+    command: get
+    prependArgs:
+      - events
+      - --sort-by=.lastTimestamp
+      - --all-namespaces
+
+  # === APPLY & DELETE ===
+  - name: af
+    command: apply
+    prependArgs:
+      - -f
+  - name: delf
+    command: delete
+    prependArgs:
+      - -f
+  - name: kaf
+    command: apply
+    prependArgs:
+      - -k
+
+  # === RESOURCE OVERVIEW ===
+  - name: gall
+    command: get
+    prependArgs:
+      - all
+  - name: galla
+    command: get
+    prependArgs:
+      - all
+      - --all-namespaces
+
+  # === PV & PVC ===
+  - name: gpv
+    command: get
+    prependArgs:
+      - persistentvolumes
+  - name: gpvc
+    command: get
+    prependArgs:
+      - persistentvolumeclaims
+  - name: dpvc
+    command: describe
+    prependArgs:
+      - persistentvolumeclaim
+
+  # === STATEFULSET & DAEMONSET ===
+  - name: gsts
+    command: get
+    prependArgs:
+      - statefulsets
+  - name: dsts
+    command: describe
+    prependArgs:
+      - statefulset
+  - name: gds
+    command: get
+    prependArgs:
+      - daemonsets
+  - name: dds
+    command: describe
+    prependArgs:
+      - daemonset
+
+  # === JOBS & CRONJOBS ===
+  - name: gj
+    command: get
+    prependArgs:
+      - jobs
+  - name: dj
+    command: describe
+    prependArgs:
+      - job
+  - name: gcj
+    command: get
+    prependArgs:
+      - cronjobs
+  - name: dcj
+    command: describe
+    prependArgs:
+      - cronjob
+
+  # === RBAC ===
+  - name: gsaa
+    command: get
+    prependArgs:
+      - serviceaccounts
+  - name: grb
+    command: get
+    prependArgs:
+      - rolebindings
+  - name: gcrb
+    command: get
+    prependArgs:
+      - clusterrolebindings
+  - name: gr
+    command: get
+    prependArgs:
+      - roles
+  - name: gcr
+    command: get
+    prependArgs:
+      - clusterroles
+
+  # === RESOURCE METRICS ===
+  - name: tp
+    command: top
+    prependArgs:
+      - pods
+  - name: tpa
+    command: top
+    prependArgs:
+      - pods
+      - --all-namespaces
+
+  # === CONTEXT ===
+  - name: ctx
+    command: config
+    prependArgs:
+      - get-contexts
+  - name: uctx
+    command: config
+    prependArgs:
+      - use-context
+
+  # === DEBUGGING ===
+  - name: dbg
+    command: run
+    prependArgs:
+      - netshoot
+      - --rm
+      - -it
+      - --restart=Never
+      - --image=nicolaka/netshoot
+      - --
+
+  # === HPA ===
+  - name: ghpa
+    command: get
+    prependArgs:
+      - horizontalpodautoscalers
+  - name: dhpa
+    command: describe
+    prependArgs:
+      - horizontalpodautoscaler
+
+  # === CRD ===
+  - name: gcrd
+    command: get
+    prependArgs:
+      - customresourcedefinitions
+
+  # === PORT-FORWARD ===
+  - name: pf
+    command: port-forward
+
+  # === DRY-RUN OUTPUT ===
+  - name: dryc
+    command: create
+    prependArgs:
+      - --dry-run=client
+      - -o=yaml
+  - name: drys
+    command: create
+    prependArgs:
+      - --dry-run=server
+      - -o=yaml
+
+  # === REPLICASET ===
+  - name: grs
+    command: get
+    prependArgs:
+      - replicasets
+  - name: drs
+    command: describe
+    prependArgs:
+      - replicaset
