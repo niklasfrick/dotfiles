@@ -4,19 +4,11 @@
 # Kubernetes
 alias kubectl="kubecolor"
 alias k="kubectl"
-alias kg="kubectl get"
-alias kga="kubectl get all"
-alias kgn="kubectl get nodes"
-alias kgns="kubectl get namespaces"
-alias kgp="kubectl get pods"
-alias kgd="kubectl get deployments"
-alias kgs="kubectl get svc"
-alias kaf="kubectl apply -f"
-alias kdf="kubectl delete -f"
-alias kd="kubectl describe"
 alias h="helm"
-alias tf="terraform"
 alias kalpine="createkubernetesalpinetest"
+
+# DevOps
+alias tf="terraform"
 alias t="talosctl"
 
 # Velero
