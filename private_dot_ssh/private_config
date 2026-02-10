@@ -7,8 +7,6 @@ Host gitlab.onzack.io
 	Port 2022
 
 Host gitlab.swisslex.ch
-	HostName gitlab.swisslex.ch
-	User git
 	Port 2022
 
 Host *.onzack.io
