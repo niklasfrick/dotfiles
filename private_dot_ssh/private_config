@@ -7,6 +7,9 @@ Host gitlab.onzack.io
 	Port 2022
 
 Host gitlab.swisslex.ch
+	HostName gitlab.swisslex.ch
+	IdentityFile ~/.ssh/id_onzack_ssh_key.pub
+	IdentitiesOnly yes
 	Port 2022
 
 Host *.onzack.io
