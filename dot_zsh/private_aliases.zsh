@@ -36,6 +36,7 @@ alias mkcd='function _mkcd(){ mkdir -p "$1" && cd "$1"; }; _mkcd'
 alias ghl="cd $HOME/Coding/homelab"
 alias gozk="cd $HOME/ONZACK"
 alias gic='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
+alias gtpec="cd $HOME/TPEC"
 
 # a quick way to get out of current directory
 alias ..='cd ..'
