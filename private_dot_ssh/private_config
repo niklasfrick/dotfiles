@@ -8,6 +8,7 @@ Host gitlab.onzack.io
 
 Host gitlab.swisslex.ch
 	Port 2022
+	User git
 
 Host *.onzack.io
 	User nfrick
